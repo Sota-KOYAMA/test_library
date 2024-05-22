@@ -1,5 +1,4 @@
 import networkx as nx
-from make_graph import *
 from heapq import heappop, heappush
 def prim(G,s):
     # 未探索のノードを管理する集合を作成
