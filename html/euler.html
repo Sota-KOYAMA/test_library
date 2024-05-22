@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>index.md</title>
+<title>euler.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -365,33 +365,16 @@ code {
           : 'default'
     });
   </script>
-<h1 id="%E8%87%AA%E4%BD%9C%E3%81%AE%E9%96%A2%E6%95%B0%E7%BE%A4%E3%82%92%E7%BD%AE%E3%81%84%E3%81%A6%E3%81%84%E3%81%8D%E3%81%BE%E3%81%99">自作の関数群を置いていきます</h1>
-<h2 id="%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E5%89%8D%E3%81%AE%E6%B3%A8%E6%84%8F">使用する前の注意</h2>
-<p>インポートする際には</p>
-<pre class="hljs"><code><div><span class="hljs-keyword">import</span> sys
-sys.path.append(<span class="hljs-string">'your_library_path'</span>)
-<span class="hljs-keyword">from</span> my_library <span class="hljs-keyword">import</span> *
+<h1 id="%E3%82%AA%E3%82%A4%E3%83%A9%E3%83%BC%E9%96%89%E8%B7%AF%E5%88%A4%E5%AE%9A">オイラー閉路判定</h1>
+<p>オイラー閉路か準オイラー閉路があるか判定し、存在する場合、その種類と経路を返します。</p>
+<h2 id="%E4%BD%BF%E7%94%A8%E4%BE%8B">使用例</h2>
+<pre class="hljs"><code><div>G = nx.read_weighted_edgelist(<span class="hljs-string">'sample.edgelst'</span>, nodetype=int)
+print(euler(G))
 </div></code></pre>
-<p>としてください。</p>
-<h3 id="%E3%83%9A%E3%83%BC%E3%82%B8%E4%B8%80%E8%A6%A7">ページ一覧</h3>
-<ul>
-<li>ds・math
-<ul>
-<li><a href="statistics.html">代表値を求める</a></li>
-<li><a href="normal_table.html">標準正規分布表の数値を表示する</a></li>
-<li><a href="normal_distribution.html">正規分布の確率を求める</a></li>
-</ul>
-</li>
-<li>cs・algo
-<ul>
-<li><a href="make_graph.html">ランダムグラフの作成</a></li>
-<li><a href="prim.html">最小全域木(prim)</a></li>
-<li><a href="kruskal.html">最小全域木(kruskal)</a></li>
-<li><a href="dijkstra.html">最短距離問題</a></li>
-<li><a href="euler.html">オイラー閉路</a></li>
-</ul>
-</li>
-</ul>
+<p>出力</p>
+<pre class="hljs"><code><div>('perfect euler!',
+ [1, 2, 3, 5, 2, 4, 5, 6, 9, 8, 10, 11, 9, 12, 11, 8, 7, 4, 1])
+</div></code></pre>
 
 </body>
 </html>
