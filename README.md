@@ -1,8 +1,2 @@
-## 使用する前の注意
-インポートする際には
-```python
-import sys
-sys.path.append('your_lib_dir')
-import my_library
-```
-としてください。
+テスト用の自作ライブラリ
+各関数の使い方に関してはhtmlを参照してください
