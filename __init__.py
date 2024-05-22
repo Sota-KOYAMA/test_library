@@ -7,7 +7,8 @@ from .dijkstra import *
 from .kruskal import *
 from .prim import *
 from .euler import *
+from .bellman_ford import *
 
-__all__ = ["normal_table", "normal_distribution", "statistics", "wiki", "MakeGraph", "show_graph", "dijkstra", "kruskal", "prim", "dijkstra", "euler"]
+__all__ = ["normal_table", "normal_distribution", "statistics", "wiki", "MakeGraph", "show_graph", "dijkstra", "kruskal", "prim", "dijkstra", "euler", "bellman_ford"]
 
 wiki()
