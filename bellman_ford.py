@@ -1,7 +1,6 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 import heapq
-from make_graph import *
 
 def bellman_ford(G,s):
     n = nx.number_of_nodes(G)
@@ -18,7 +17,3 @@ def bellman_ford(G,s):
             return (False, D)
             # return (False, D)
     return (True, D)
-
-mg = MakeGraph(10, weighted=True)
-G = mg.graph
-print(bellman_ford(G,0))
