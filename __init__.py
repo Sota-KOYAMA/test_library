@@ -9,6 +9,6 @@ from .prim import *
 from .euler import *
 from .bellman_ford import *
 
-__all__ = ["normal_table", "normal_distribution", "statistics", "wiki", "MakeGraph", "show_graph", "dijkstra", "kruskal", "prim", "dijkstra", "euler", "bellman_ford"]
+__all__ = ["NormalTable", "NormalDistribution", "statistics", "wiki", "MakeGraph", "show_graph", "dijkstra", "kruskal", "prim", "dijkstra", "euler", "bellman_ford"]
 
 wiki()
